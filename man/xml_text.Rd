@@ -44,8 +44,7 @@ xml_text(xml_find_all(x, "//x"))
 x <- read_xml("<p>   Some text    </p>")
 xml_text(x, trim = TRUE)
 
-# xml_double() and xml_integer() are useful for extracting numeric
-attributes
+# xml_double() and xml_integer() are useful for extracting numeric attributes
 x <- read_xml("<plot><point x='1' y='2' /><point x='2' y='1' /></plot>")
 xml_integer(xml_find_all(x, "//@x"))
 }
